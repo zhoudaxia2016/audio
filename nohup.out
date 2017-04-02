@@ -1,0 +1,400 @@
+*** Starting uWSGI 2.0.14 (64bit) on [Thu Mar 30 22:01:52 2017] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-11) on 19 March 2017 21:03:53
+os: Linux-3.10.0-327.36.3.el7.x86_64 #1 SMP Mon Oct 24 16:09:20 UTC 2016
+nodename: VM_254_236_centos
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /root/audio
+detected binary path: /usr/python3/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 3901
+your memory page size is 4096 bytes
+detected max file descriptor number: 100001
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:9000 fd 3
+Python version: 3.6.0 (default, Mar 19 2017, 20:28:09)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-11)]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0xffbcb0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 72768 bytes (71 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0xffbcb0 pid: 31308 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 31308, cores: 1)
+[pid: 31308|app: 0|req: 1/1] 120.236.163.79 () {44 vars in 816 bytes} [Thu Mar 30 22:02:01 2017] GET / => generated 2265 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[pid: 31308|app: 0|req: 2/2] 120.236.163.79 () {46 vars in 838 bytes} [Thu Mar 30 22:02:01 2017] GET /static/audio.js => generated 0 bytes in 8 msecs (HTTP/1.1 304) 1 headers in 66 bytes (0 switches on core 0)
+[pid: 31308|app: 0|req: 3/3] 120.236.163.79 () {46 vars in 855 bytes} [Thu Mar 30 22:02:01 2017] GET /static/style.css => generated 0 bytes in 0 msecs (HTTP/1.1 304) 1 headers in 66 bytes (0 switches on core 0)
+[pid: 31308|app: 0|req: 4/4] 120.236.163.79 () {46 vars in 838 bytes} [Thu Mar 30 22:02:01 2017] GET /getSongs => generated 13360 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 74 bytes (1 switches on core 0)
+[pid: 31308|app: 0|req: 5/5] 120.236.163.79 () {44 vars in 809 bytes} [Thu Mar 30 22:02:01 2017] GET /getSong/1 => generated 104 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)
+And I Need You Most-Hey.mp3
+[pid: 31308|app: 0|req: 6/6] 120.236.163.79 () {36 vars in 594 bytes} [Thu Mar 30 22:02:02 2017] GET /get/source/And%20I%20Need%20You%20Most-Hey.mp3 => generated 2023803 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 4 headers in 138 bytes (0 switches on core 0)
+[pid: 31308|app: 0|req: 7/7] 120.236.163.79 () {44 vars in 809 bytes} [Thu Mar 30 22:02:05 2017] GET /getSong/3 => generated 101 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)
+Lost Stars-Adam Levine.jpg
+[pid: 31308|app: 0|req: 8/8] 120.236.163.79 () {42 vars in 819 bytes} [Thu Mar 30 22:02:05 2017] GET /get/pic/Lost%20Stars-Adam%20Levine.jpg => generated 468864 bytes in 8 msecs via sendfile() (HTTP/1.1 200) 4 headers in 137 bytes (0 switches on core 0)
+Lost Stars-Adam Levine.mp3
+[pid: 31308|app: 0|req: 9/9] 120.236.163.79 () {36 vars in 587 bytes} [Thu Mar 30 22:02:05 2017] GET /get/source/Lost%20Stars-Adam%20Levine.mp3 => generated 3252959 bytes in 38 msecs via sendfile() (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 31308|app: 0|req: 10/10] 120.236.163.70 () {44 vars in 780 bytes} [Thu Mar 30 22:02:23 2017] GET /getSong/1 => generated 104 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)
+And I Need You Most-Hey.mp3
+[pid: 31308|app: 0|req: 11/11] 120.236.163.70 () {46 vars in 857 bytes} [Thu Mar 30 22:02:24 2017] GET /get/source/And%20I%20Need%20You%20Most-Hey.mp3 => generated 1408202 bytes in 2 msecs (HTTP/1.1 206) 5 headers in 196 bytes (2 switches on core 0)
+[pid: 31308|app: 0|req: 12/12] 120.236.163.79 () {44 vars in 815 bytes} [Thu Mar 30 22:04:47 2017] GET / => generated 2265 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[pid: 31308|app: 0|req: 13/13] 120.236.163.79 () {46 vars in 837 bytes} [Thu Mar 30 22:04:47 2017] GET /static/audio.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 1 headers in 66 bytes (0 switches on core 0)
+[pid: 31308|app: 0|req: 14/14] 120.236.163.79 () {46 vars in 855 bytes} [Thu Mar 30 22:04:47 2017] GET /static/style.css => generated 0 bytes in 0 msecs (HTTP/1.1 304) 1 headers in 66 bytes (0 switches on core 0)
+[pid: 31308|app: 0|req: 15/15] 120.236.163.79 () {46 vars in 838 bytes} [Thu Mar 30 22:04:47 2017] GET /getSongs => generated 13360 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 74 bytes (1 switches on core 0)
+[pid: 31308|app: 0|req: 16/16] 120.236.163.79 () {44 vars in 809 bytes} [Thu Mar 30 22:04:47 2017] GET /getSong/1 => generated 104 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)
+And I Need You Most-Hey.jpg
+[pid: 31308|app: 0|req: 17/17] 120.236.163.79 () {44 vars in 880 bytes} [Thu Mar 30 22:04:47 2017] GET /get/pic/And%20I%20Need%20You%20Most-Hey.jpg => generated 0 bytes in 0 msecs (HTTP/1.1 304) 1 headers in 66 bytes (0 switches on core 0)
+And I Need You Most-Hey.mp3
+[pid: 31308|app: 0|req: 18/18] 120.236.163.79 () {36 vars in 593 bytes} [Thu Mar 30 22:04:47 2017] GET /get/source/And%20I%20Need%20You%20Most-Hey.mp3 => generated 2023803 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 4 headers in 138 bytes (0 switches on core 0)
+[pid: 31308|app: 0|req: 19/19] 120.236.163.70 () {44 vars in 779 bytes} [Thu Mar 30 22:04:56 2017] GET /getSong/5 => generated 113 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)
+The Things About Tears-AGA.jpg
+[pid: 31308|app: 0|req: 20/20] 120.236.163.70 () {46 vars in 876 bytes} [Thu Mar 30 22:04:56 2017] GET /get/pic/The%20Things%20About%20Tears-AGA.jpg => generated 1 bytes in 0 msecs (HTTP/1.1 206) 5 headers in 186 bytes (1 switches on core 0)
+The Things About Tears-AGA.mp3
+[pid: 31308|app: 0|req: 21/21] 120.236.163.70 () {46 vars in 860 bytes} [Thu Mar 30 22:04:56 2017] GET /get/source/The%20Things%20About%20Tears-AGA.mp3 => generated 3187168 bytes in 9 msecs (HTTP/1.1 206) 5 headers in 196 bytes (5 switches on core 0)
+The Things About Tears-AGA.jpg
+[pid: 31308|app: 0|req: 22/22] 120.236.163.70 () {46 vars in 877 bytes} [Thu Mar 30 22:04:56 2017] GET /get/pic/The%20Things%20About%20Tears-AGA.jpg => generated 169057 bytes in 0 msecs (HTTP/1.1 206) 5 headers in 192 bytes (1 switches on core 0)
+[pid: 31308|app: 0|req: 23/23] 120.236.163.70 () {44 vars in 779 bytes} [Thu Mar 30 22:05:03 2017] GET /getSong/3 => generated 101 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)
+Lost Stars-Adam Levine.jpg
+[pid: 31308|app: 0|req: 24/24] 120.236.163.70 () {42 vars in 789 bytes} [Thu Mar 30 22:05:03 2017] GET /get/pic/Lost%20Stars-Adam%20Levine.jpg => generated 468864 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 4 headers in 137 bytes (0 switches on core 0)
+Lost Stars-Adam Levine.mp3
+[pid: 31308|app: 0|req: 25/25] 120.236.163.70 () {44 vars in 792 bytes} [Thu Mar 30 22:05:03 2017] GET /get/source/Lost%20Stars-Adam%20Levine.mp3 => generated 3252959 bytes in 8 msecs (HTTP/1.1 206) 5 headers in 191 bytes (5 switches on core 0)
+[pid: 31308|app: 0|req: 26/26] 120.236.163.70 () {44 vars in 779 bytes} [Thu Mar 30 22:05:17 2017] GET /getSong/8 => generated 146 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)
+胆小鬼-梁咏琪.jpg
+[pid: 31308|app: 0|req: 27/27] 120.236.163.70 () {42 vars in 815 bytes} [Thu Mar 30 22:05:17 2017] GET /get/pic/%E8%83%86%E5%B0%8F%E9%AC%BC-%E6%A2%81%E5%92%8F%E7%90%AA.jpg => generated 607577 bytes in 5 msecs via sendfile() (HTTP/1.1 200) 4 headers in 137 bytes (0 switches on core 0)
+胆小鬼-梁咏琪.mp3
+[pid: 31308|app: 0|req: 28/28] 120.236.163.70 () {44 vars in 818 bytes} [Thu Mar 30 22:05:17 2017] GET /get/source/%E8%83%86%E5%B0%8F%E9%AC%BC-%E6%A2%81%E5%92%8F%E7%90%AA.mp3 => generated 3135288 bytes in 21 msecs (HTTP/1.1 206) 5 headers in 191 bytes (3 switches on core 0)
+[pid: 31308|app: 0|req: 29/29] 120.236.163.70 () {44 vars in 779 bytes} [Thu Mar 30 22:07:44 2017] GET /getSong/9 => generated 362 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)
+遇见你的时候所有星星都落到我头上-高姗.jpg
+[pid: 31308|app: 0|req: 30/30] 120.236.163.70 () {42 vars in 959 bytes} [Thu Mar 30 22:07:44 2017] GET /get/pic/%E9%81%87%E8%A7%81%E4%BD%A0%E7%9A%84%E6%97%B6%E5%80%99%E6%89%80%E6%9C%89%E6%98%9F%E6%98%9F%E9%83%BD%E8%90%BD%E5%88%B0%E6%88%91%E5%A4%B4%E4%B8%8A-%E9%AB%98%E5%A7%97.jpg => generated 172582 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 4 headers in 137 bytes (0 switches on core 0)
+遇见你的时候所有星星都落到我头上-高姗.mp3
+[pid: 31308|app: 0|req: 31/31] 120.236.163.70 () {44 vars in 962 bytes} [Thu Mar 30 22:07:44 2017] GET /get/source/%E9%81%87%E8%A7%81%E4%BD%A0%E7%9A%84%E6%97%B6%E5%80%99%E6%89%80%E6%9C%89%E6%98%9F%E6%98%9F%E9%83%BD%E8%90%BD%E5%88%B0%E6%88%91%E5%A4%B4%E4%B8%8A-%E9%AB%98%E5%A7%97.mp3 => generated 2746443 bytes in 9 msecs (HTTP/1.1 206) 5 headers in 191 bytes (3 switches on core 0)
+[pid: 31308|app: 0|req: 32/32] 120.236.163.79 () {44 vars in 801 bytes} [Thu Mar 30 23:12:11 2017] GET /getSong/1 => generated 104 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)
+And I Need You Most-Hey.jpg
+[pid: 31308|app: 0|req: 33/33] 120.236.163.79 () {44 vars in 872 bytes} [Thu Mar 30 23:12:11 2017] GET /get/pic/And%20I%20Need%20You%20Most-Hey.jpg => generated 0 bytes in 0 msecs (HTTP/1.1 304) 1 headers in 66 bytes (0 switches on core 0)
+[pid: 31308|app: 0|req: 34/34] 120.236.163.79 () {42 vars in 736 bytes} [Thu Mar 30 23:12:11 2017] GET /favicon.ico => generated 747 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 87 bytes (1 switches on core 0)
+And I Need You Most-Hey.mp3
+[pid: 31308|app: 0|req: 35/35] 120.236.163.79 () {36 vars in 586 bytes} [Thu Mar 30 23:12:11 2017] GET /get/source/And%20I%20Need%20You%20Most-Hey.mp3 => generated 2023803 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 4 headers in 138 bytes (0 switches on core 0)
+[pid: 31308|app: 0|req: 36/36] 120.236.163.79 () {44 vars in 808 bytes} [Thu Mar 30 23:12:13 2017] GET / => generated 2265 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[pid: 31308|app: 0|req: 37/37] 120.236.163.79 () {46 vars in 847 bytes} [Thu Mar 30 23:12:13 2017] GET /static/style.css => generated 0 bytes in 0 msecs (HTTP/1.1 304) 1 headers in 66 bytes (0 switches on core 0)
+[pid: 31308|app: 0|req: 38/38] 120.236.163.79 () {46 vars in 830 bytes} [Thu Mar 30 23:12:13 2017] GET /static/audio.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 1 headers in 66 bytes (0 switches on core 0)
+[pid: 31308|app: 0|req: 39/39] 120.236.163.79 () {46 vars in 830 bytes} [Thu Mar 30 23:12:13 2017] GET /getSongs => generated 13360 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 74 bytes (1 switches on core 0)
+[pid: 31308|app: 0|req: 40/40] 120.236.163.79 () {44 vars in 801 bytes} [Thu Mar 30 23:12:13 2017] GET /getSong/1 => generated 104 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)
+And I Need You Most-Hey.mp3
+[pid: 31308|app: 0|req: 41/41] 120.236.163.79 () {36 vars in 586 bytes} [Thu Mar 30 23:12:13 2017] GET /get/source/And%20I%20Need%20You%20Most-Hey.mp3 => generated 2023803 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 4 headers in 138 bytes (0 switches on core 0)
+[pid: 31308|app: 0|req: 42/42] 120.236.163.79 () {44 vars in 801 bytes} [Thu Mar 30 23:12:15 2017] GET /getSong/1 => generated 104 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)
+And I Need You Most-Hey.mp3
+[pid: 31308|app: 0|req: 43/43] 120.236.163.79 () {36 vars in 585 bytes} [Thu Mar 30 23:12:15 2017] GET /get/source/And%20I%20Need%20You%20Most-Hey.mp3 => generated 2023803 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 4 headers in 138 bytes (0 switches on core 0)
+And I Need You Most-Hey.mp3
+[pid: 31308|app: 0|req: 44/44] 120.236.163.79 () {46 vars in 736 bytes} [Thu Mar 30 23:12:20 2017] GET /get/source/And%20I%20Need%20You%20Most-Hey.mp3 => generated 2023803 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 4 headers in 138 bytes (0 switches on core 0)
+[pid: 31308|app: 0|req: 45/45] 120.236.163.79 () {44 vars in 801 bytes} [Thu Mar 30 23:12:23 2017] GET /getSong/2 => generated 89 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 71 bytes (1 switches on core 0)
+Try-Colbie Caillat.jpg
+[pid: 31308|app: 0|req: 46/46] 120.236.163.79 () {44 vars in 856 bytes} [Thu Mar 30 23:12:23 2017] GET /get/pic/Try-Colbie%20Caillat.jpg => generated 0 bytes in 0 msecs (HTTP/1.1 304) 1 headers in 66 bytes (0 switches on core 0)
+Try-Colbie Caillat.mp3
+[pid: 31308|app: 0|req: 47/47] 120.236.163.79 () {36 vars in 569 bytes} [Thu Mar 30 23:12:24 2017] GET /get/source/Try-Colbie%20Caillat.mp3 => generated 2723535 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 4 headers in 138 bytes (0 switches on core 0)
+Try-Colbie Caillat.mp3
+[pid: 31308|app: 0|req: 48/48] 120.236.163.79 () {46 vars in 721 bytes} [Thu Mar 30 23:12:28 2017] GET /get/source/Try-Colbie%20Caillat.mp3 => generated 2723535 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 4 headers in 138 bytes (0 switches on core 0)
+[pid: 31308|app: 0|req: 49/49] 120.236.163.79 () {44 vars in 808 bytes} [Thu Mar 30 23:13:04 2017] GET / => generated 2265 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[pid: 31308|app: 0|req: 50/50] 120.236.163.79 () {46 vars in 847 bytes} [Thu Mar 30 23:13:05 2017] GET /static/style.css => generated 0 bytes in 0 msecs (HTTP/1.1 304) 1 headers in 66 bytes (0 switches on core 0)
+[pid: 31308|app: 0|req: 51/51] 120.236.163.79 () {46 vars in 830 bytes} [Thu Mar 30 23:13:05 2017] GET /static/audio.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 1 headers in 66 bytes (0 switches on core 0)
+[pid: 31308|app: 0|req: 52/52] 120.236.163.79 () {46 vars in 830 bytes} [Thu Mar 30 23:13:05 2017] GET /getSongs => generated 13360 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 74 bytes (1 switches on core 0)
+[pid: 31308|app: 0|req: 53/53] 120.236.163.79 () {44 vars in 801 bytes} [Thu Mar 30 23:13:05 2017] GET /getSong/1 => generated 104 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)
+And I Need You Most-Hey.mp3
+[pid: 31308|app: 0|req: 54/54] 120.236.163.79 () {36 vars in 586 bytes} [Thu Mar 30 23:13:05 2017] GET /get/source/And%20I%20Need%20You%20Most-Hey.mp3 => generated 2023803 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 4 headers in 138 bytes (0 switches on core 0)
+And I Need You Most-Hey.mp3
+[pid: 31308|app: 0|req: 55/55] 120.236.163.79 () {46 vars in 736 bytes} [Thu Mar 30 23:13:09 2017] GET /get/source/And%20I%20Need%20You%20Most-Hey.mp3 => generated 2023803 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 4 headers in 138 bytes (0 switches on core 0)
+[pid: 31308|app: 0|req: 56/56] 120.236.163.79 () {44 vars in 801 bytes} [Thu Mar 30 23:13:14 2017] GET /getSong/2 => generated 89 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 71 bytes (1 switches on core 0)
+Try-Colbie Caillat.mp3
+[pid: 31308|app: 0|req: 57/57] 120.236.163.79 () {36 vars in 570 bytes} [Thu Mar 30 23:13:14 2017] GET /get/source/Try-Colbie%20Caillat.mp3 => generated 2723535 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 4 headers in 138 bytes (0 switches on core 0)
+Try-Colbie Caillat.mp3
+[pid: 31308|app: 0|req: 58/58] 120.236.163.79 () {46 vars in 720 bytes} [Thu Mar 30 23:13:22 2017] GET /get/source/Try-Colbie%20Caillat.mp3 => generated 2723535 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 4 headers in 138 bytes (0 switches on core 0)
+[pid: 31308|app: 0|req: 59/59] 120.236.163.79 () {44 vars in 801 bytes} [Thu Mar 30 23:13:25 2017] GET /getSong/3 => generated 101 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)
+Lost Stars-Adam Levine.jpg
+[pid: 31308|app: 0|req: 60/60] 120.236.163.79 () {44 vars in 866 bytes} [Thu Mar 30 23:13:25 2017] GET /get/pic/Lost%20Stars-Adam%20Levine.jpg => generated 0 bytes in 0 msecs (HTTP/1.1 304) 1 headers in 66 bytes (0 switches on core 0)
+Lost Stars-Adam Levine.mp3
+[pid: 31308|app: 0|req: 61/61] 120.236.163.79 () {36 vars in 579 bytes} [Thu Mar 30 23:13:25 2017] GET /get/source/Lost%20Stars-Adam%20Levine.mp3 => generated 3252959 bytes in 5 msecs via sendfile() (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 31308|app: 0|req: 62/62] 120.236.163.79 () {44 vars in 801 bytes} [Thu Mar 30 23:13:30 2017] GET /getSong/4 => generated 131 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)
+Love Paradise-陈慧琳.jpg
+[pid: 31308|app: 0|req: 63/63] 120.236.163.79 () {42 vars in 829 bytes} [Thu Mar 30 23:13:30 2017] GET /get/pic/Love%20Paradise-%E9%99%88%E6%85%A7%E7%90%B3.jpg => generated 477435 bytes in 5 msecs via sendfile() (HTTP/1.1 200) 4 headers in 137 bytes (0 switches on core 0)
+Love Paradise-陈慧琳.mp3
+[pid: 31308|app: 0|req: 64/64] 120.236.163.79 () {36 vars in 597 bytes} [Thu Mar 30 23:13:30 2017] GET /get/source/Love%20Paradise-%E9%99%88%E6%85%A7%E7%90%B3.mp3 => generated 2391379 bytes in 14 msecs via sendfile() (HTTP/1.1 200) 4 headers in 138 bytes (0 switches on core 0)
+[pid: 31308|app: 0|req: 65/65] 180.163.2.88 () {38 vars in 613 bytes} [Thu Mar 30 23:34:15 2017] GET /getSong/1 => generated 104 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)
+%E5%B1%B1%E6%9C%89%E6%9C%A8%E5%85%AE-%E6%A9%99%E5%85%89%E6%B8%B8%E6%88%8F%E3%80%8A%E4%BA%BA%E9%B1%BC%E4%BC%A0%E8%AF%B4%E4%B9%8B%E9%95%BF%E7%94%9F%E7%83%9B%E3%80%8B%E4%B8%BB%E9%A2%98%E6%9B%B2-%E4%BC%A6%E6%A1%91
+[pid: 31308|app: 0|req: 66/66] 101.226.66.173 () {38 vars in 1154 bytes} [Thu Mar 30 23:34:54 2017] GET /get/pic/%25E5%25B1%25B1%25E6%259C%2589%25E6%259C%25A8%25E5%2585%25AE-%25E6%25A9%2599%25E5%2585%2589%25E6%25B8%25B8%25E6%2588%258F%25E3%2580%258A%25E4%25BA%25BA%25E9%25B1%25BC%25E4%25BC%25A0%25E8%25AF%25B4%25E4%25B9%258B%25E9%2595%25BF%25E7%2594%259F%25E7%2583%259B%25E3%2580%258B%25E4%25B8%25BB%25E9%25A2%2598%25E6%259B%25B2-%25E4%25BC%25A6%25E6%25A1%2591 => generated 1076 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 88 bytes (1 switches on core 0)
+%E5%B1%B1%E6%9C%89%E6%9C%A8%E5%85%AE-%E6%A9%99%E5%85%89%E6%B8%B8%E6%88%8F%E3%80%8A%E4%BA%BA%E9%B1%BC%E4%BC%A0%E8%AF%B4%E4%B9%8B%E9%95%BF%E7%94%9F%E7%83%9B%E3%80%8B%E4%B8%BB%E9%A2%98%E6%9B%B2-%E4%BC%A6%E6%A1%91
+[pid: 31308|app: 0|req: 67/67] 119.7.82.46 () {38 vars in 1110 bytes} [Thu Mar 30 23:35:07 2017] GET /get/pic/%25E5%25B1%25B1%25E6%259C%2589%25E6%259C%25A8%25E5%2585%25AE-%25E6%25A9%2599%25E5%2585%2589%25E6%25B8%25B8%25E6%2588%258F%25E3%2580%258A%25E4%25BA%25BA%25E9%25B1%25BC%25E4%25BC%25A0%25E8%25AF%25B4%25E4%25B9%258B%25E9%2595%25BF%25E7%2594%259F%25E7%2583%259B%25E3%2580%258B%25E4%25B8%25BB%25E9%25A2%2598%25E6%259B%25B2-%25E4%25BC%25A6%25E6%25A1%2591 => generated 1076 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 88 bytes (1 switches on core 0)
+Gracefully killing worker 1 (pid: 31308)...
+*** Starting uWSGI 2.0.14 (64bit) on [Sat Apr  1 13:32:15 2017] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-11) on 19 March 2017 21:03:53
+os: Linux-3.10.0-327.36.3.el7.x86_64 #1 SMP Mon Oct 24 16:09:20 UTC 2016
+nodename: VM_254_236_centos
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /root/audio
+detected binary path: /usr/python3/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 3901
+your memory page size is 4096 bytes
+detected max file descriptor number: 100001
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8002 fd 3
+Python version: 3.6.0 (default, Mar 19 2017, 20:28:09)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-11)]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x2174c80
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 72768 bytes (71 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x2174c80 pid: 17138 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 17138, cores: 1)
+[pid: 17138|app: 0|req: 1/1] 120.236.163.79 () {44 vars in 871 bytes} [Sat Apr  1 13:32:56 2017] GET / => generated 2265 bytes in 6 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 2/2] 120.236.163.79 () {44 vars in 855 bytes} [Sat Apr  1 13:32:56 2017] GET /static/style.css => generated 5891 bytes in 6 msecs via sendfile() (HTTP/1.1 200) 4 headers in 148 bytes (0 switches on core 0)
+[pid: 17138|app: 0|req: 3/3] 120.236.163.79 () {44 vars in 838 bytes} [Sat Apr  1 13:32:56 2017] GET /static/audio.js => generated 4816 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 4 headers in 147 bytes (0 switches on core 0)
+[pid: 17138|app: 0|req: 4/4] 120.236.163.79 () {46 vars in 893 bytes} [Sat Apr  1 13:32:56 2017] GET /getSongs => generated 13360 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 74 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 5/5] 120.236.163.79 () {42 vars in 799 bytes} [Sat Apr  1 13:32:56 2017] GET /favicon.ico => generated 747 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 87 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 6/6] 120.236.163.79 () {44 vars in 864 bytes} [Sat Apr  1 13:32:57 2017] GET /getSong/1 => generated 104 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)
+And I Need You Most-Hey.jpg
+[pid: 17138|app: 0|req: 7/7] 120.236.163.79 () {42 vars in 880 bytes} [Sat Apr  1 13:32:57 2017] GET /get/pic/And%20I%20Need%20You%20Most-Hey.jpg => generated 782152 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 4 headers in 137 bytes (0 switches on core 0)
+And I Need You Most-Hey.mp3
+[pid: 17138|app: 0|req: 8/8] 120.236.163.79 () {36 vars in 593 bytes} [Sat Apr  1 13:32:57 2017] GET /get/source/And%20I%20Need%20You%20Most-Hey.mp3 => generated 2023803 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 4 headers in 138 bytes (0 switches on core 0)
+And I Need You Most-Hey.mp3
+[pid: 17138|app: 0|req: 9/9] 120.236.163.79 () {46 vars in 745 bytes} [Sat Apr  1 13:33:00 2017] GET /get/source/And%20I%20Need%20You%20Most-Hey.mp3 => generated 2023803 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 4 headers in 138 bytes (0 switches on core 0)
+[pid: 17138|app: 0|req: 10/10] 120.236.163.79 () {44 vars in 864 bytes} [Sat Apr  1 13:33:30 2017] GET /getSong/2 => generated 89 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 71 bytes (1 switches on core 0)
+Try-Colbie Caillat.jpg
+[pid: 17138|app: 0|req: 11/11] 120.236.163.79 () {42 vars in 864 bytes} [Sat Apr  1 13:33:30 2017] GET /get/pic/Try-Colbie%20Caillat.jpg => generated 206496 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 4 headers in 137 bytes (0 switches on core 0)
+Try-Colbie Caillat.mp3
+[pid: 17138|app: 0|req: 12/12] 120.236.163.79 () {36 vars in 577 bytes} [Sat Apr  1 13:33:30 2017] GET /get/source/Try-Colbie%20Caillat.mp3 => generated 2723535 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 4 headers in 138 bytes (0 switches on core 0)
+Try-Colbie Caillat.mp3
+[pid: 17138|app: 0|req: 13/13] 120.236.163.79 () {46 vars in 728 bytes} [Sat Apr  1 13:33:34 2017] GET /get/source/Try-Colbie%20Caillat.mp3 => generated 2723535 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 4 headers in 138 bytes (0 switches on core 0)
+[pid: 17138|app: 0|req: 14/14] 120.236.163.70 () {42 vars in 757 bytes} [Sat Apr  1 13:34:37 2017] GET / => generated 2265 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 15/15] 120.236.163.70 () {42 vars in 741 bytes} [Sat Apr  1 13:34:37 2017] GET /static/style.css => generated 5891 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 4 headers in 148 bytes (0 switches on core 0)
+[pid: 17138|app: 0|req: 16/16] 120.236.163.70 () {42 vars in 724 bytes} [Sat Apr  1 13:34:37 2017] GET /static/audio.js => generated 4816 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 4 headers in 147 bytes (0 switches on core 0)
+[pid: 17138|app: 0|req: 17/17] 120.236.163.70 () {44 vars in 779 bytes} [Sat Apr  1 13:34:37 2017] GET /getSongs => generated 13360 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 74 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 18/18] 120.236.163.70 () {42 vars in 741 bytes} [Sat Apr  1 13:34:37 2017] GET /favicon.ico => generated 747 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 87 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 19/19] 120.236.163.70 () {44 vars in 781 bytes} [Sat Apr  1 13:34:37 2017] GET /getSong/1 => generated 104 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)
+And I Need You Most-Hey.jpg
+[pid: 17138|app: 0|req: 20/20] 120.236.163.70 () {42 vars in 797 bytes} [Sat Apr  1 13:34:37 2017] GET /get/pic/And%20I%20Need%20You%20Most-Hey.jpg => generated 782152 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 4 headers in 137 bytes (0 switches on core 0)
+And I Need You Most-Hey.mp3
+[pid: 17138|app: 0|req: 21/21] 120.236.163.70 () {44 vars in 800 bytes} [Sat Apr  1 13:34:37 2017] GET /get/source/And%20I%20Need%20You%20Most-Hey.mp3 => generated 2023803 bytes in 3 msecs (HTTP/1.1 206) 5 headers in 191 bytes (2 switches on core 0)
+[pid: 17138|app: 0|req: 22/22] 120.236.163.79 () {44 vars in 864 bytes} [Sat Apr  1 13:37:23 2017] GET /getSong/3 => generated 101 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)
+Lost Stars-Adam Levine.jpg
+[pid: 17138|app: 0|req: 23/23] 120.236.163.79 () {42 vars in 874 bytes} [Sat Apr  1 13:37:23 2017] GET /get/pic/Lost%20Stars-Adam%20Levine.jpg => generated 468864 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 4 headers in 137 bytes (0 switches on core 0)
+Lost Stars-Adam Levine.mp3
+[pid: 17138|app: 0|req: 24/24] 120.236.163.79 () {36 vars in 587 bytes} [Sat Apr  1 13:37:23 2017] GET /get/source/Lost%20Stars-Adam%20Levine.mp3 => generated 3252959 bytes in 5 msecs via sendfile() (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+Lost Stars-Adam Levine.mp3
+[pid: 17138|app: 0|req: 25/25] 120.236.163.79 () {46 vars in 739 bytes} [Sat Apr  1 13:37:25 2017] GET /get/source/Lost%20Stars-Adam%20Levine.mp3 => generated 3252959 bytes in 6 msecs via sendfile() (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 26/26] 120.236.163.70 () {42 vars in 779 bytes} [Sat Apr  1 13:37:34 2017] GET /favicon.ico => generated 747 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 87 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 27/27] 120.236.163.70 () {44 vars in 780 bytes} [Sat Apr  1 13:40:13 2017] GET /getSong/2 => generated 89 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 71 bytes (1 switches on core 0)
+Try-Colbie Caillat.jpg
+[pid: 17138|app: 0|req: 28/28] 120.236.163.70 () {42 vars in 780 bytes} [Sat Apr  1 13:40:13 2017] GET /get/pic/Try-Colbie%20Caillat.jpg => generated 206496 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 4 headers in 137 bytes (0 switches on core 0)
+Try-Colbie Caillat.mp3
+[pid: 17138|app: 0|req: 29/29] 120.236.163.70 () {44 vars in 783 bytes} [Sat Apr  1 13:40:13 2017] GET /get/source/Try-Colbie%20Caillat.mp3 => generated 2723535 bytes in 8 msecs (HTTP/1.1 206) 5 headers in 191 bytes (4 switches on core 0)
+[pid: 17138|app: 0|req: 30/30] 120.236.163.70 () {44 vars in 780 bytes} [Sat Apr  1 13:40:21 2017] GET /getSong/1 => generated 104 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 31/31] 120.236.163.70 () {44 vars in 780 bytes} [Sat Apr  1 13:40:24 2017] GET /getSong/5 => generated 113 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)
+The Things About Tears-AGA.jpg
+[pid: 17138|app: 0|req: 32/32] 120.236.163.70 () {42 vars in 800 bytes} [Sat Apr  1 13:40:24 2017] GET /get/pic/The%20Things%20About%20Tears-AGA.jpg => generated 255636 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 4 headers in 137 bytes (0 switches on core 0)
+The Things About Tears-AGA.mp3
+[pid: 17138|app: 0|req: 33/33] 120.236.163.70 () {44 vars in 803 bytes} [Sat Apr  1 13:40:24 2017] GET /get/source/The%20Things%20About%20Tears-AGA.mp3 => generated 3305893 bytes in 6 msecs (HTTP/1.1 206) 5 headers in 191 bytes (5 switches on core 0)
+[pid: 17138|app: 0|req: 34/34] 120.236.163.70 () {44 vars in 780 bytes} [Sat Apr  1 13:45:09 2017] GET /getSong/6 => generated 65 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 71 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 35/35] 120.236.163.70 () {42 vars in 762 bytes} [Sat Apr  1 13:45:09 2017] GET /get/pic/%E5%9C%86-AGA.jpg => generated 771 bytes in 1 msecs (HTTP/1.1 500) 2 headers in 99 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 36/36] 120.236.163.70 () {44 vars in 765 bytes} [Sat Apr  1 13:45:09 2017] GET /get/source/%E5%9C%86-AGA.mp3 => generated 774 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 99 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 37/37] 120.236.163.70 () {44 vars in 780 bytes} [Sat Apr  1 13:46:19 2017] GET /getSong/7 => generated 125 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)
+Wonderful U - Demo Version-AGA.jpg
+[pid: 17138|app: 0|req: 38/38] 120.236.163.70 () {42 vars in 810 bytes} [Sat Apr  1 13:46:19 2017] GET /get/pic/Wonderful%20U%20-%20Demo%20Version-AGA.jpg => generated 255636 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 4 headers in 137 bytes (0 switches on core 0)
+Wonderful U - Demo Version-AGA.mp3
+[pid: 17138|app: 0|req: 39/39] 120.236.163.70 () {44 vars in 814 bytes} [Sat Apr  1 13:46:19 2017] GET /get/source/Wonderful%20U%20-%20Demo%20Version-AGA.mp3 => generated 2983959 bytes in 8 msecs (HTTP/1.1 206) 5 headers in 191 bytes (3 switches on core 0)
+[pid: 17138|app: 0|req: 40/40] 120.236.163.70 () {44 vars in 780 bytes} [Sat Apr  1 13:50:28 2017] GET /getSong/8 => generated 146 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 41/41] 120.236.163.70 () {44 vars in 780 bytes} [Sat Apr  1 13:50:39 2017] GET /getSong/9 => generated 362 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 42/42] 120.236.163.70 () {44 vars in 782 bytes} [Sat Apr  1 13:50:48 2017] GET /getSong/10 => generated 137 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 43/43] 120.236.163.70 () {44 vars in 782 bytes} [Sat Apr  1 13:50:50 2017] GET /getSong/11 => generated 128 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 44/44] 120.236.163.70 () {44 vars in 782 bytes} [Sat Apr  1 13:51:01 2017] GET /getSong/12 => generated 164 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 45/45] 120.236.163.70 () {44 vars in 782 bytes} [Sat Apr  1 13:51:06 2017] GET /getSong/13 => generated 254 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 46/46] 120.236.163.70 () {44 vars in 788 bytes} [Sat Apr  1 13:52:31 2017] GET / => generated 2265 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 47/47] 120.236.163.70 () {44 vars in 779 bytes} [Sat Apr  1 13:52:31 2017] GET /getSongs => generated 13360 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 74 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 48/48] 120.236.163.70 () {44 vars in 781 bytes} [Sat Apr  1 13:52:31 2017] GET /getSong/1 => generated 104 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 49/49] 120.236.163.70 () {44 vars in 781 bytes} [Sat Apr  1 13:52:38 2017] GET /getSong/2 => generated 89 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 71 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 50/50] 120.236.163.70 () {44 vars in 780 bytes} [Sat Apr  1 13:52:42 2017] GET /getSong/3 => generated 101 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 51/51] 120.236.163.70 () {44 vars in 780 bytes} [Sat Apr  1 13:52:52 2017] GET /getSong/4 => generated 131 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 52/52] 120.236.163.70 () {44 vars in 780 bytes} [Sat Apr  1 13:53:00 2017] GET /getSong/5 => generated 113 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 53/53] 120.236.163.79 () {42 vars in 777 bytes} [Sat Apr  1 13:54:35 2017] GET / => generated 2265 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 54/54] 120.236.163.79 () {42 vars in 761 bytes} [Sat Apr  1 13:54:35 2017] GET /static/style.css => generated 5891 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 4 headers in 148 bytes (0 switches on core 0)
+[pid: 17138|app: 0|req: 55/55] 120.236.163.79 () {42 vars in 744 bytes} [Sat Apr  1 13:54:35 2017] GET /static/audio.js => generated 4816 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 4 headers in 147 bytes (0 switches on core 0)
+[pid: 17138|app: 0|req: 56/56] 120.236.163.79 () {44 vars in 799 bytes} [Sat Apr  1 13:54:36 2017] GET /getSongs => generated 13360 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 74 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 57/57] 120.236.163.79 () {42 vars in 736 bytes} [Sat Apr  1 13:54:36 2017] GET /favicon.ico => generated 747 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 87 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 58/58] 120.236.163.79 () {44 vars in 801 bytes} [Sat Apr  1 13:54:36 2017] GET /getSong/1 => generated 104 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 59/59] 120.236.163.79 () {44 vars in 801 bytes} [Sat Apr  1 13:54:49 2017] GET /getSong/2 => generated 89 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 71 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 60/60] 106.120.160.119 () {38 vars in 620 bytes} [Sat Apr  1 13:55:05 2017] GET / => generated 2265 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 61/61] 101.199.112.49 () {40 vars in 704 bytes} [Sat Apr  1 13:55:30 2017] GET / => generated 2265 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 62/62] 101.199.112.49 () {42 vars in 728 bytes} [Sat Apr  1 13:55:30 2017] GET /static/style.css => generated 5891 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 4 headers in 148 bytes (0 switches on core 0)
+[pid: 17138|app: 0|req: 63/63] 101.199.112.49 () {42 vars in 711 bytes} [Sat Apr  1 13:55:30 2017] GET /static/audio.js => generated 4816 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 4 headers in 147 bytes (0 switches on core 0)
+[pid: 17138|app: 0|req: 64/64] 101.199.112.49 () {44 vars in 766 bytes} [Sat Apr  1 13:55:30 2017] GET /getSongs => generated 13360 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 74 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 65/65] 120.236.163.79 () {44 vars in 800 bytes} [Sat Apr  1 13:58:43 2017] GET /getSong/3 => generated 101 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 66/66] 120.236.163.79 () {44 vars in 800 bytes} [Sat Apr  1 14:03:18 2017] GET /getSong/4 => generated 131 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 67/67] 120.236.163.70 () {44 vars in 787 bytes} [Sat Apr  1 14:05:32 2017] GET / => generated 2265 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 68/68] 120.236.163.70 () {44 vars in 778 bytes} [Sat Apr  1 14:05:33 2017] GET /getSongs => generated 13360 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 74 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 69/69] 120.236.163.70 () {44 vars in 780 bytes} [Sat Apr  1 14:05:33 2017] GET /getSong/1 => generated 104 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 70/70] 120.236.163.70 () {44 vars in 780 bytes} [Sat Apr  1 14:05:39 2017] GET /getSong/2 => generated 89 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 71 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 71/71] 120.236.163.70 () {42 vars in 690 bytes} [Sat Apr  1 14:06:09 2017] GET / => generated 2265 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 72/72] 120.236.163.70 () {40 vars in 643 bytes} [Sat Apr  1 14:06:09 2017] GET /static/style.css => generated 5891 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 4 headers in 148 bytes (0 switches on core 0)
+[pid: 17138|app: 0|req: 73/73] 120.236.163.70 () {40 vars in 626 bytes} [Sat Apr  1 14:06:09 2017] GET /static/audio.js => generated 4888 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 4 headers in 147 bytes (0 switches on core 0)
+[pid: 17138|app: 0|req: 74/74] 120.236.163.79 () {44 vars in 800 bytes} [Sat Apr  1 14:06:42 2017] GET /getSong/5 => generated 113 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 75/75] 120.236.163.70 () {42 vars in 690 bytes} [Sat Apr  1 14:06:44 2017] GET / => generated 2265 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 76/76] 120.236.163.70 () {40 vars in 643 bytes} [Sat Apr  1 14:06:44 2017] GET /static/style.css => generated 5891 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 4 headers in 148 bytes (0 switches on core 0)
+[pid: 17138|app: 0|req: 77/77] 120.236.163.70 () {40 vars in 626 bytes} [Sat Apr  1 14:06:44 2017] GET /static/audio.js => generated 4889 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 4 headers in 147 bytes (0 switches on core 0)
+[pid: 17138|app: 0|req: 78/78] 120.236.163.70 () {42 vars in 681 bytes} [Sat Apr  1 14:06:44 2017] GET /getSongs => generated 13360 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 74 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 79/79] 120.236.163.70 () {42 vars in 683 bytes} [Sat Apr  1 14:06:44 2017] GET /getSong/1 => generated 104 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 80/80] 120.236.163.70 () {42 vars in 684 bytes} [Sat Apr  1 14:06:49 2017] GET /getSong/2 => generated 89 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 71 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 81/81] 120.236.163.70 () {42 vars in 691 bytes} [Sat Apr  1 14:07:17 2017] GET / => generated 2265 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 82/82] 120.236.163.70 () {42 vars in 682 bytes} [Sat Apr  1 14:07:17 2017] GET /static/audio.js => generated 4895 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 4 headers in 147 bytes (0 switches on core 0)
+[pid: 17138|app: 0|req: 83/83] 120.236.163.70 () {42 vars in 682 bytes} [Sat Apr  1 14:07:17 2017] GET /getSongs => generated 13360 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 74 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 84/84] 120.236.163.70 () {42 vars in 684 bytes} [Sat Apr  1 14:07:17 2017] GET /getSong/1 => generated 104 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 85/85] 120.236.163.70 () {42 vars in 684 bytes} [Sat Apr  1 14:07:44 2017] GET /getSong/2 => generated 89 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 71 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 86/86] 120.236.163.70 () {42 vars in 691 bytes} [Sat Apr  1 14:08:22 2017] GET / => generated 2265 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 87/87] 120.236.163.70 () {40 vars in 644 bytes} [Sat Apr  1 14:08:22 2017] GET /static/style.css => generated 5891 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 4 headers in 148 bytes (0 switches on core 0)
+[pid: 17138|app: 0|req: 88/88] 120.236.163.70 () {40 vars in 627 bytes} [Sat Apr  1 14:08:22 2017] GET /static/audio.js => generated 4895 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 4 headers in 147 bytes (0 switches on core 0)
+[pid: 17138|app: 0|req: 89/89] 120.236.163.70 () {42 vars in 682 bytes} [Sat Apr  1 14:08:22 2017] GET /getSongs => generated 13360 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 74 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 90/90] 120.236.163.70 () {42 vars in 684 bytes} [Sat Apr  1 14:08:22 2017] GET /getSong/1 => generated 104 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 91/91] 120.236.163.70 () {42 vars in 683 bytes} [Sat Apr  1 14:08:27 2017] GET /getSong/2 => generated 89 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 71 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 92/92] 120.236.163.70 () {42 vars in 691 bytes} [Sat Apr  1 14:09:51 2017] GET / => generated 2265 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 93/93] 120.236.163.70 () {42 vars in 682 bytes} [Sat Apr  1 14:09:51 2017] GET /static/audio.js => generated 4929 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 4 headers in 147 bytes (0 switches on core 0)
+[pid: 17138|app: 0|req: 94/94] 120.236.163.70 () {42 vars in 682 bytes} [Sat Apr  1 14:09:51 2017] GET /getSongs => generated 13360 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 74 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 95/95] 120.236.163.70 () {42 vars in 684 bytes} [Sat Apr  1 14:09:51 2017] GET /getSong/1 => generated 104 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 96/96] 120.236.163.70 () {42 vars in 684 bytes} [Sat Apr  1 14:10:06 2017] GET /getSong/2 => generated 89 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 71 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 97/97] 120.236.163.70 () {42 vars in 684 bytes} [Sat Apr  1 14:10:12 2017] GET /getSong/3 => generated 101 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 98/98] 120.236.163.70 () {42 vars in 684 bytes} [Sat Apr  1 14:10:24 2017] GET /getSong/4 => generated 131 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 99/99] 120.236.163.70 () {42 vars in 683 bytes} [Sat Apr  1 14:10:27 2017] GET /getSong/5 => generated 113 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 100/100] 120.236.163.70 () {42 vars in 684 bytes} [Sat Apr  1 14:10:28 2017] GET /getSong/6 => generated 65 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 71 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 101/101] 120.236.163.70 () {42 vars in 683 bytes} [Sat Apr  1 14:14:38 2017] GET /getSong/7 => generated 125 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 102/102] 120.236.163.70 () {42 vars in 683 bytes} [Sat Apr  1 14:18:47 2017] GET /getSong/8 => generated 146 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 103/103] 120.236.163.70 () {42 vars in 690 bytes} [Sat Apr  1 14:19:30 2017] GET / => generated 2265 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 104/104] 120.236.163.70 () {42 vars in 681 bytes} [Sat Apr  1 14:19:30 2017] GET /static/audio.js => generated 4929 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 4 headers in 147 bytes (0 switches on core 0)
+[pid: 17138|app: 0|req: 105/105] 120.236.163.70 () {42 vars in 681 bytes} [Sat Apr  1 14:19:31 2017] GET /getSongs => generated 13360 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 74 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 106/106] 120.236.163.70 () {42 vars in 683 bytes} [Sat Apr  1 14:19:31 2017] GET /getSong/1 => generated 104 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 107/107] 120.236.163.70 () {42 vars in 690 bytes} [Sat Apr  1 14:20:11 2017] GET / => generated 2265 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 108/108] 120.236.163.70 () {40 vars in 643 bytes} [Sat Apr  1 14:20:11 2017] GET /static/style.css => generated 5891 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 4 headers in 148 bytes (0 switches on core 0)
+[pid: 17138|app: 0|req: 109/109] 120.236.163.70 () {40 vars in 626 bytes} [Sat Apr  1 14:20:11 2017] GET /static/audio.js => generated 4929 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 4 headers in 147 bytes (0 switches on core 0)
+[pid: 17138|app: 0|req: 110/110] 120.236.163.70 () {42 vars in 681 bytes} [Sat Apr  1 14:20:12 2017] GET /getSongs => generated 13360 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 74 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 111/111] 120.236.163.70 () {42 vars in 683 bytes} [Sat Apr  1 14:20:12 2017] GET /getSong/1 => generated 104 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 112/112] 120.236.163.70 () {42 vars in 690 bytes} [Sat Apr  1 14:20:21 2017] GET / => generated 2265 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 113/113] 120.236.163.70 () {42 vars in 681 bytes} [Sat Apr  1 14:20:21 2017] GET /getSongs => generated 13360 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 74 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 114/114] 120.236.163.70 () {42 vars in 683 bytes} [Sat Apr  1 14:20:21 2017] GET /getSong/1 => generated 104 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 115/115] 120.236.163.70 () {42 vars in 683 bytes} [Sat Apr  1 14:20:40 2017] GET /getSong/2 => generated 89 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 71 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 116/116] 120.236.163.79 () {42 vars in 841 bytes} [Sat Apr  1 14:41:21 2017] GET / => generated 2265 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 117/117] 120.236.163.79 () {44 vars in 863 bytes} [Sat Apr  1 14:41:22 2017] GET /getSongs => generated 1395 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 73 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 118/118] 120.236.163.79 () {42 vars in 800 bytes} [Sat Apr  1 14:41:22 2017] GET /favicon.ico => generated 747 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 87 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 119/119] 120.236.163.79 () {44 vars in 865 bytes} [Sat Apr  1 14:41:22 2017] GET /getSong/1 => generated 158 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 120/120] 120.236.163.79 () {44 vars in 865 bytes} [Sat Apr  1 14:41:37 2017] GET /getSong/2 => generated 146 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 121/121] 219.133.40.13 () {44 vars in 1096 bytes} [Sat Apr  1 14:46:23 2017] GET /?nsukey=Td%2Bd17CPU0hgR2OKfGIly3INGSNK%2FxSqO3sIggOZRj%2ByDZ8uILvv%2F6CQ7JzoEnlZhR%2F%2FMbzAz1RUKOUsDxG%2BxrhpNsnnjM7IK8Is4325c2f5yXS%2BENAn3rlAZEbgEPJsVDK6yNj29RV%2FUJAb59gyKthx3pGPVRhr3l9vPCEJKXdT9tDWv8CVvXBwHAMAPR6U => generated 2265 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 122/122] 183.61.52.70 () {42 vars in 1191 bytes} [Sat Apr  1 14:46:24 2017] GET /?nsukey=Td%2Bd17CPU0hgR2OKfGIly3INGSNK%2FxSqO3sIggOZRj%2ByDZ8uILvv%2F6CQ7JzoEnlZhR%2F%2FMbzAz1RUKOUsDxG%2BxrhpNsnnjM7IK8Is4325c2f5yXS%2BENAn3rlAZEbgEPJsVDK6yNj29RV%2FUJAb59gyKthx3pGPVRhr3l9vPCEJKXdT9tDWv8CVvXBwHAMAPR6U => generated 2265 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 123/123] 14.17.37.43 () {42 vars in 860 bytes} [Sat Apr  1 14:46:24 2017] GET /static/audio.js => generated 4929 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 4 headers in 147 bytes (0 switches on core 0)
+[pid: 17138|app: 0|req: 124/124] 14.17.37.161 () {42 vars in 878 bytes} [Sat Apr  1 14:46:24 2017] GET /static/style.css => generated 5891 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 4 headers in 148 bytes (0 switches on core 0)
+[pid: 17138|app: 0|req: 125/125] 183.61.51.191 () {44 vars in 917 bytes} [Sat Apr  1 14:46:24 2017] GET /getSongs => generated 1395 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 73 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 126/126] 113.108.11.52 () {44 vars in 1096 bytes} [Sat Apr  1 14:46:24 2017] GET /?nsukey=Td%2Bd17CPU0hgR2OKfGIly3INGSNK%2FxSqO3sIggOZRj%2ByDZ8uILvv%2F6CQ7JzoEnlZhR%2F%2FMbzAz1RUKOUsDxG%2BxrhpNsnnjM7IK8Is4325c2f5yXS%2BENAn3rlAZEbgEPJsVDK6yNj29RV%2FUJAb59gyKthx3pGPVRhr3l9vPCEJKXdT9tDWv8CVvXBwHAMAPR6U => generated 2265 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 127/127] 113.108.0.15 () {42 vars in 1191 bytes} [Sat Apr  1 14:46:24 2017] GET /?nsukey=Td%2Bd17CPU0hgR2OKfGIly3INGSNK%2FxSqO3sIggOZRj%2ByDZ8uILvv%2F6CQ7JzoEnlZhR%2F%2FMbzAz1RUKOUsDxG%2BxrhpNsnnjM7IK8Is4325c2f5yXS%2BENAn3rlAZEbgEPJsVDK6yNj29RV%2FUJAb59gyKthx3pGPVRhr3l9vPCEJKXdT9tDWv8CVvXBwHAMAPR6U => generated 2265 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 128/128] 183.61.52.70 () {44 vars in 916 bytes} [Sat Apr  1 14:46:24 2017] GET /getSongs => generated 1395 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 73 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 129/129] 120.236.163.79 () {42 vars in 1340 bytes} [Sat Apr  1 14:46:26 2017] GET /?nsukey=Td%2Bd17CPU0hgR2OKfGIly3INGSNK%2FxSqO3sIggOZRj%2ByDZ8uILvv%2F6CQ7JzoEnlZhR%2F%2FMbzAz1RUKOUsDxG%2BxrhpNsnnjM7IK8Is4325c2f5yXS%2BENAn3rlAZEbgEPJsVDK6yNj29RV%2FUJAb59gyKthx3pGPVRhr3l9vPCEJKXdT9tDWv8CVvXBwHAMAPR6U => generated 2265 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 130/130] 120.236.163.79 () {42 vars in 1082 bytes} [Sat Apr  1 14:46:26 2017] GET /static/style.css => generated 5891 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 4 headers in 148 bytes (0 switches on core 0)
+[pid: 17138|app: 0|req: 131/131] 120.236.163.79 () {42 vars in 1065 bytes} [Sat Apr  1 14:46:26 2017] GET /static/audio.js => generated 4929 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 4 headers in 147 bytes (0 switches on core 0)
+[pid: 17138|app: 0|req: 132/132] 120.236.163.79 () {44 vars in 1120 bytes} [Sat Apr  1 14:46:26 2017] GET /getSongs => generated 1395 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 73 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 133/133] 120.236.163.79 () {44 vars in 1122 bytes} [Sat Apr  1 14:46:26 2017] GET /getSong/1 => generated 158 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 134/134] 180.153.205.253 () {38 vars in 633 bytes} [Sat Apr  1 14:46:30 2017] GET / => generated 2265 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 135/135] 180.153.205.253 () {40 vars in 750 bytes} [Sat Apr  1 14:46:30 2017] GET /static/audio.js => generated 4929 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 4 headers in 147 bytes (0 switches on core 0)
+[pid: 17138|app: 0|req: 136/136] 101.226.68.213 () {38 vars in 1113 bytes} [Sat Apr  1 14:46:33 2017] GET /?nsukey=Td%2Bd17CPU0hgR2OKfGIly3INGSNK%2FxSqO3sIggOZRj%2ByDZ8uILvv%2F6CQ7JzoEnlZhR%2F%2FMbzAz1RUKOUsDxG%2BxrhpNsnnjM7IK8Is4325c2f5yXS%2BENAn3rlAZEbgEPJsVDK6yNj29RV%2FUJAb59gyKthx3pGPVRhr3l9vPCEJKXdT9tDWv8CVvXBwHAMAPR6U => generated 2265 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 137/137] 101.226.68.213 () {40 vars in 988 bytes} [Sat Apr  1 14:46:33 2017] GET /static/audio.js => generated 4929 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 4 headers in 147 bytes (0 switches on core 0)
+[pid: 17138|app: 0|req: 138/138] 120.236.163.79 () {44 vars in 864 bytes} [Sat Apr  1 14:46:59 2017] GET /getSong/3 => generated 209 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 139/139] 120.236.163.79 () {44 vars in 864 bytes} [Sat Apr  1 14:47:40 2017] GET /getSong/2 => generated 146 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 140/140] 120.236.163.79 () {44 vars in 865 bytes} [Sat Apr  1 14:49:11 2017] GET /getSong/3 => generated 209 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 141/141] 120.236.163.79 () {44 vars in 867 bytes} [Sat Apr  1 14:51:06 2017] GET /getSong/18 => generated 224 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 142/142] 120.236.163.79 () {44 vars in 867 bytes} [Sat Apr  1 14:55:28 2017] GET /getSong/19 => generated 173 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 143/143] 120.236.163.79 () {44 vars in 866 bytes} [Sat Apr  1 14:59:29 2017] GET /getSong/20 => generated 127 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 144/144] 120.236.163.79 () {44 vars in 866 bytes} [Sat Apr  1 15:02:48 2017] GET /getSong/21 => generated 122 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 145/145] 120.236.163.79 () {44 vars in 866 bytes} [Sat Apr  1 15:07:11 2017] GET /getSong/22 => generated 110 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 146/146] 120.236.163.79 () {44 vars in 866 bytes} [Sat Apr  1 15:10:27 2017] GET /getSong/23 => generated 65 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 71 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 147/147] 120.236.163.79 () {44 vars in 866 bytes} [Sat Apr  1 15:14:08 2017] GET /getSong/24 => generated 218 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 148/148] 120.236.163.79 () {44 vars in 864 bytes} [Sat Apr  1 15:19:11 2017] GET /getSong/1 => generated 158 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 149/149] 101.226.68.215 () {38 vars in 635 bytes} [Sat Apr  1 15:55:54 2017] GET /getSongs => generated 1395 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 73 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 150/150] 180.163.2.118 () {38 vars in 598 bytes} [Sat Apr  1 15:56:03 2017] GET /getSongs => generated 1395 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 73 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 151/151] 101.226.64.174 () {38 vars in 637 bytes} [Sat Apr  1 15:56:53 2017] GET /getSong/6 => generated 189 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 152/152] 180.153.214.190 () {38 vars in 616 bytes} [Sat Apr  1 15:57:02 2017] GET /getSong/6 => generated 189 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 153/153] 180.153.81.212 () {38 vars in 600 bytes} [Sat Apr  1 15:57:45 2017] GET /getSong/1 => generated 158 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 154/154] 183.60.15.115 () {26 vars in 269 bytes} [Sat Apr  1 16:19:15 2017] GET / => generated 2265 bytes in 0 msecs (HTTP/1.0 200) 2 headers in 81 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 155/155] 101.226.103.146 () {34 vars in 395 bytes} [Sat Apr  1 16:32:32 2017] GET / => generated 2265 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 156/156] 101.226.103.146 () {34 vars in 395 bytes} [Sat Apr  1 16:32:33 2017] GET / => generated 2265 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 157/157] 101.226.103.146 () {34 vars in 395 bytes} [Sat Apr  1 16:32:33 2017] GET / => generated 2265 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 158/158] 183.60.48.110 () {34 vars in 393 bytes} [Sat Apr  1 16:38:40 2017] GET / => generated 2265 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 159/159] 61.151.226.189 () {38 vars in 600 bytes} [Sat Apr  1 16:48:12 2017] GET /getSong/7 => generated 164 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 160/160] 180.153.214.192 () {38 vars in 602 bytes} [Sat Apr  1 16:53:33 2017] GET /getSong/3 => generated 209 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 161/161] 101.226.89.116 () {38 vars in 615 bytes} [Sat Apr  1 16:56:46 2017] GET /getSong/2 => generated 146 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 162/162] 219.133.49.231 () {36 vars in 434 bytes} [Sat Apr  1 17:00:56 2017] GET /proxy.html => generated 740 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 87 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 163/163] 101.226.103.146 () {34 vars in 395 bytes} [Sat Apr  1 17:01:07 2017] GET / => generated 2265 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 164/164] 101.226.103.146 () {34 vars in 395 bytes} [Sat Apr  1 17:01:07 2017] GET / => generated 2265 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 165/165] 101.226.103.146 () {34 vars in 395 bytes} [Sat Apr  1 17:01:08 2017] GET / => generated 2265 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 166/166] 101.226.66.173 () {38 vars in 615 bytes} [Sat Apr  1 17:01:23 2017] GET /getSong/4 => generated 164 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 167/167] 101.226.33.225 () {38 vars in 1137 bytes} [Sat Apr  1 17:11:06 2017] GET /?nsukey%3DTd%252Bd17CPU0hgR2OKfGIly3INGSNK%252FxSqO3sIggOZRj%252ByDZ8uILvv%252F6CQ7JzoEnlZhR%252F%252FMbzAz1RUKOUsDxG%252BxrhpNsnnjM7IK8Is4325c2f5yXS%252BENAn3rlAZEbgEPJsVDK6yNj29RV%252FUJAb59gyKthx3pGPVRhr3l9vPCEJKXdT9tDWv8CVvXBwHAMAPR6U => generated 2265 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 168/168] 101.226.33.225 () {40 vars in 857 bytes} [Sat Apr  1 17:11:06 2017] GET /static/audio.js => generated 4929 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 4 headers in 147 bytes (0 switches on core 0)
+[pid: 17138|app: 0|req: 169/169] 101.226.33.220 () {38 vars in 680 bytes} [Sat Apr  1 17:41:48 2017] GET /getSong/8 => generated 96 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 71 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 170/170] 101.226.33.228 () {38 vars in 600 bytes} [Sat Apr  1 17:43:07 2017] GET /getSong/2 => generated 146 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 171/171] 101.226.33.208 () {38 vars in 566 bytes} [Sat Apr  1 18:15:04 2017] GET /getSong/23 => generated 65 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 71 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 172/172] 180.153.214.176 () {38 vars in 547 bytes} [Sat Apr  1 18:24:20 2017] GET / => generated 2265 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 173/173] 180.153.214.176 () {40 vars in 620 bytes} [Sat Apr  1 18:24:20 2017] GET /static/audio.js => generated 4929 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 4 headers in 147 bytes (0 switches on core 0)
+[pid: 17138|app: 0|req: 174/174] 101.226.64.174 () {38 vars in 639 bytes} [Sat Apr  1 19:27:05 2017] GET /getSong/24 => generated 218 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 175/175] 101.226.125.111 () {38 vars in 604 bytes} [Sat Apr  1 19:27:15 2017] GET /getSong/24 => generated 218 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 176/176] 101.226.68.200 () {38 vars in 566 bytes} [Sat Apr  1 19:50:11 2017] GET /getSong/19 => generated 173 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 17138|app: 0|req: 177/177] 101.226.65.104 () {38 vars in 601 bytes} [Sat Apr  1 20:28:19 2017] GET /getSong/4 => generated 164 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.15 (64bit) on [Sat Apr  1 20:55:11 2017] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-11) on 01 April 2017 16:57:33
+os: Linux-3.10.0-327.36.3.el7.x86_64 #1 SMP Mon Oct 24 16:09:20 UTC 2016
+nodename: VM_136_20_centos
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /root/mysite/audio
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 3901
+your memory page size is 4096 bytes
+detected max file descriptor number: 100001
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8002 fd 3
+Python version: 3.6.0 (default, Apr  1 2017, 16:45:29)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-11)]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x1876b90
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 72768 bytes (71 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x1876b90 pid: 5522 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 5522, cores: 1)
+[pid: 5522|app: 0|req: 1/1] 120.236.163.70 () {42 vars in 703 bytes} [Sat Apr  1 20:55:14 2017] GET / => generated 2265 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[pid: 5522|app: 0|req: 2/2] 120.236.163.70 () {42 vars in 710 bytes} [Sat Apr  1 20:55:14 2017] GET /static/style.css => generated 0 bytes in 1 msecs (HTTP/1.1 304) 1 headers in 66 bytes (0 switches on core 0)
+[pid: 5522|app: 0|req: 3/3] 120.236.163.70 () {42 vars in 693 bytes} [Sat Apr  1 20:55:14 2017] GET /static/audio.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 1 headers in 66 bytes (0 switches on core 0)
+[pid: 5522|app: 0|req: 4/4] 120.236.163.70 () {42 vars in 693 bytes} [Sat Apr  1 20:55:14 2017] GET /getSongs => generated 1395 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 73 bytes (1 switches on core 0)
+[pid: 5522|app: 0|req: 5/5] 120.236.163.70 () {42 vars in 695 bytes} [Sat Apr  1 20:55:15 2017] GET /getSong/1 => generated 158 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 5522|app: 0|req: 6/6] 120.236.163.79 () {42 vars in 723 bytes} [Sat Apr  1 20:56:42 2017] GET /getSong/7 => generated 164 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 5522|app: 0|req: 7/7] 101.226.64.174 () {38 vars in 650 bytes} [Sat Apr  1 22:28:42 2017] GET /getSong/1 => generated 158 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 5522|app: 0|req: 8/8] 61.151.226.16 () {38 vars in 576 bytes} [Sat Apr  1 22:28:51 2017] GET /getSong/1 => generated 158 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 5522|app: 0|req: 9/9] 61.151.226.202 () {38 vars in 657 bytes} [Sat Apr  1 22:31:03 2017] GET /getSong/2 => generated 146 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 5522|app: 0|req: 10/10] 101.226.66.172 () {38 vars in 575 bytes} [Sat Apr  1 22:35:36 2017] GET /getSongs => generated 1395 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 73 bytes (1 switches on core 0)
+[pid: 5522|app: 0|req: 11/11] 112.90.82.218 () {38 vars in 649 bytes} [Sat Apr  1 22:52:22 2017] GET /getSong/6 => generated 189 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 5522|app: 0|req: 12/12] 101.226.66.192 () {38 vars in 614 bytes} [Sat Apr  1 22:52:31 2017] GET /getSong/6 => generated 189 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 5522|app: 0|req: 13/13] 101.226.68.197 () {38 vars in 614 bytes} [Sat Apr  1 22:57:35 2017] GET /getSong/7 => generated 164 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 5522|app: 0|req: 14/14] 101.226.64.174 () {38 vars in 650 bytes} [Sat Apr  1 22:58:45 2017] GET /getSong/4 => generated 164 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 5522|app: 0|req: 15/15] 101.226.33.206 () {38 vars in 693 bytes} [Sat Apr  1 22:58:54 2017] GET /getSong/4 => generated 164 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 5522|app: 0|req: 16/16] 101.226.33.224 () {38 vars in 596 bytes} [Sat Apr  1 22:58:54 2017] GET / => generated 2265 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[pid: 5522|app: 0|req: 17/17] 101.226.33.224 () {40 vars in 668 bytes} [Sat Apr  1 22:59:09 2017] GET /static/audio.js => generated 4929 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 4 headers in 147 bytes (0 switches on core 0)
+Gracefully killing worker 1 (pid: 5522)...

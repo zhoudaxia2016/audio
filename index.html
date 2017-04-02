@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <script src="http://cdn.bootcss.com/vue/2.2.4/vue.min.js"></script>
+  <script src="http://cdn.bootcss.com/vue-resource/1.2.1/vue-resource.min.js"></script>
+  <link href="/static/style.css" rel="stylesheet">
+  <title>html5 player</title>
+</head>
+<body>
+<div class="player">
+  <div class="header">
+    <div class="wave" :class='{wave1: play}'></div>
+    <div class="wave" :class='{wave2: play}'></div>
+    <div class="wave" :class='{wave3: play}'></div>
+    <div class="wave" :class='{wave4: play}'></div>
+    <div class="wave" :class='{wave5: play}'></div>
+    <div class="wave" :class='{wave6: play}'></div>
+  </div>
+
+  <div class="content">
+    <playlist name='所有歌曲' ref='all' v-bind:songs='songs'></playlist>
+  </div>
+
+  <audio id="control-hidden">你的浏览器不支持audio标签，扔了吧</audio>
+  <div id="control" v-on:click.self='showDetail=true'>
+    <img class="song-pic" v-on:click='showDetail=true'></img>
+    <div class="song-title" v-on:click='showDetail=true'></div>
+    <div :class='{play: !play,stop: play}' v-on:click='toggle()'></div>
+    <div class="like"></div>
+  </div>
+
+  <div class="song-detail" :class='{show: showDetail}'>
+    <div class="close-btn" v-on:click='showDetail=false'></div>
+    <div class="song-title"></div>
+    <div class="song-singer"></div>
+    <div class="border"></div>
+    <div class="disk"></div>
+    <div class="bg-bar" v-on:click='adjust($event)'>
+      <div class="progress-bar"></div>
+    </div>
+    <div class="prev" v-on:click='prev()'></div>
+    <div :class='{detailPlay: !play,detailStop: play}' v-on:click='toggle()'></div>
+    <div class="next" v-on:click='next()'></div>
+  </div>
+
+</div>
+
+  <template id="playlist">
+  <ul class="playlist" @click.self='popup($event)'>
+      [[ name ]] <div class="count">([[ count ]])</div>
+      <template v-if='show'>
+        <li v-for='song in songs' v-on:click='getSong(song)'>
+          [[ song.title ]]
+        </li>
+      </template>
+      <div :class='{openlogo: show,closelogo: !show}'></div>
+    </ul>
+  </template>
+  <script src="/static/audio.js"></script>
+</body>
+</html>
